@@ -1,0 +1,46 @@
+body{
+    background: #444;
+    color: #f6f6f6;
+    margin: 0;
+    line-height: 1.7rem;
+    letter-spacing: .05rem;
+    font-size: 1.5rem;
+}
+
+.btn{
+    padding: .5rem 2rem;
+    cursor: pointer;
+    transition: .2s background;
+}
+
+.btn:hover{
+    background: #a9a9a9;
+}
+.game{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.game__heading{
+    margin: 0 0 2.5rem 0;
+    font-weight: normal;
+}
+
+.game__instructions,
+.input-group{
+    margin-bottom: 2rem;
+}
+
+.game__input{
+    padding: .5rem;
+}
+
+.game__input,
+.btn{
+    font-size: 1rem;
+    border: none;
+    outline: none;
+}
