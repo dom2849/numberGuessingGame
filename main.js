@@ -6,7 +6,7 @@ let winningNumber;
 
 let userInput = document.querySelector('.game__input');
 let btnAction = document.getElementById("action");
-let gameContainer = document.querySelector(".game");
+let body = document.querySelector("body");
 let gameHeading = document.querySelector(".game__heading");
 
 addClickListeners();
@@ -14,7 +14,7 @@ setUpGame();
 
 function addClickListeners(){
     btnAction.addEventListener('click', handleAction);
-    gameContainer.addEventListener('keypress', handleAction);
+    body.addEventListener('keypress', handleAction);
     gameHeading.addEventListener('click', moveHeading);
 }
 

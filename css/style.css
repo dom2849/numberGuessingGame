@@ -42,6 +42,7 @@ body{
 .game__instructions,
 .input-group{
     margin-bottom: 2rem;
+    text-align: center;
 }
 
 .game__input{
