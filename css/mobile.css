@@ -1,7 +1,11 @@
 body{
-    font-size: 1.15rem;
+    font-size: 1.1rem;
 }
 
 .game__heading{
     line-height: 1.3;
+}
+
+.game__input{
+    width: 50%;
 }

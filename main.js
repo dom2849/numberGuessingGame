@@ -57,7 +57,7 @@ function handleUserInput() {
     else {
         remainingNumberOfGuesses --;
         let guessesSingularOrPlural = getSingularOrPluralFormOfGuesses(remainingNumberOfGuesses);
-        gameFeedback = `${userGuess} is incorrect. You have ${remainingNumberOfGuesses} ${guessesSingularOrPlural} left`;
+        gameFeedback = `Wrong. You have ${remainingNumberOfGuesses} ${guessesSingularOrPlural} left`;
     }
 
     if (remainingNumberOfGuesses < 1){
