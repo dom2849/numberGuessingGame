@@ -26,6 +26,7 @@ body{
 
 .game__heading{
     margin: 0 0 2.5rem 0;
+    cursor: pointer;
     font-weight: normal;
 }
 
@@ -43,4 +44,20 @@ body{
     font-size: 1rem;
     border: none;
     outline: none;
+}
+
+/* Animation */
+.move{
+    animation: move 2s ease-in;
+}
+@keyframes move{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-200px);
+    }
+    100%{
+        transform: translateY(0);
+    }
 }
