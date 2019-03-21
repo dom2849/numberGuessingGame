@@ -2,7 +2,7 @@ body{
     background: #444;
     color: #f6f6f6;
     margin: 0;
-    line-height: 1.7rem;
+    line-height: 1;
     letter-spacing: .05rem;
     font-size: 1.5rem;
 }
@@ -11,6 +11,7 @@ body{
     padding: .5rem 2rem;
     cursor: pointer;
     transition: .2s background;
+    background: #fff;
 }
 
 .btn:hover{
@@ -21,13 +22,15 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center
+    align-items: center;
+    animation: move-game 2s ease-out;
 }
 
 .game__heading{
     margin: 0 0 2.5rem 0;
     cursor: pointer;
     font-weight: normal;
+    text-align: center;
 }
 
 .game__instructions,
@@ -37,6 +40,7 @@ body{
 
 .game__input{
     padding: .5rem;
+    width: 50%;
 }
 
 .game__input,
@@ -47,10 +51,11 @@ body{
 }
 
 /* Animation */
-.move{
-    animation: move 2s ease-in;
+.move-heading{
+    animation: move-heading 2s ease-in;
 }
-@keyframes move{
+
+@keyframes move-heading{
     0%{
         transform: translateY(0);
     }
@@ -59,5 +64,14 @@ body{
     }
     100%{
         transform: translateY(0);
+    }
+}
+
+@keyframes move-game{
+    from{
+        transform: translateX(-3000px);
+    }
+    to{
+        transform: translateX(0);
     }
 }

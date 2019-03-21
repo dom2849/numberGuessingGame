@@ -15,13 +15,13 @@ setUpGame();
 function addClickListeners(){
     btnAction.addEventListener('click', handleAction);
     gameContainer.addEventListener('keypress', handleAction);
-    gameHeading.addEventListener('click', moveElement);
+    gameHeading.addEventListener('click', moveHeading);
 }
 
-function moveElement(e){
-    e.target.classList.remove("move");
+function moveHeading(e){
+    e.target.classList.remove("move-heading");
     void e.target.offsetWidth;
-    e.target.classList.add("move");
+    e.target.classList.add("move-heading");
     
 }
 
@@ -61,7 +61,7 @@ function handleUserInput() {
     }
 
     if (remainingNumberOfGuesses < 1){
-        gameFeedback = 'You lose';
+        gameFeedback = `You lose. The correct number was ${winningNumber}`;
         endGame();
     }
     
