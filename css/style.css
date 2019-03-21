@@ -17,6 +17,12 @@ body{
 .btn:hover{
     background: #a9a9a9;
 }
+@media (hover:none), (hover:on-demand){
+    .btn:hover{
+        background: #fff;
+    }
+}
+
 .game{
     height: 100vh;
     display: flex;
@@ -40,7 +46,6 @@ body{
 
 .game__input{
     padding: .5rem;
-    width: 50%;
 }
 
 .game__input,
@@ -49,6 +54,7 @@ body{
     border: none;
     outline: none;
 }
+
 
 /* Animation */
 .move-heading{

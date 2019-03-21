@@ -1,4 +1,4 @@
-const numberOfGuesses = 6;
+const numberOfGuesses = 5;
 let remainingNumberOfGuesses = numberOfGuesses;
 const playAgainMessage = 'Play again'
 const upperBound = 10;
